@@ -58,4 +58,4 @@ function atualizarCarrinho() {
 window.onload = () => {
     carregarProdutos();
     atualizarCarrinho();
-}
+};
