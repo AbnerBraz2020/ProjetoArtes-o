@@ -32,7 +32,7 @@ function adicionarAoCarrinho(nome, preco, imagem) {
 }
 
 function removerDoCarrinho(nome) {
-    let carrinho = JSON.parse(localStorage.getItem('carrinho)')) || [];
+    let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
     carrinho = carrinho.filter(item => item.nome !== nome);
     localStorage.setItem('carrinho', JSON.stringify(carrinho));
     atualizarCarrinho();
